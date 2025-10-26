@@ -3,61 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>GTA Anime Landing — Demo Futurista</title>
-  <meta name="description" content="Landing interactiva 3D con estética anime futurista, creada con Three.js" />
+  <title>Blood Strike — Anime Edition</title>
+  <meta name="description" content="Landing 3D con estilo anime futurista. Proyecto creado por Carlitos.">
 
-  <!-- Favicon y estilos -->
-  <link rel="icon" href="./favicon.ico" />
+  <link rel="icon" href="./assets/images/logo.png" />
   <link rel="stylesheet" href="./css/style.css" />
-
-  <!-- Scripts principales -->
   <script type="module" src="./js/app.js"></script>
-  <script type="module" src="./js/ui.js"></script>
 </head>
 
 <body>
   <div id="app">
     <div id="canvas-wrap">
-      <canvas id="three-canvas" aria-label="Escena 3D principal"></canvas>
+      <canvas id="three-canvas"></canvas>
     </div>
 
     <header class="topbar glass">
       <img src="./assets/images/logo.png" alt="Logo del juego" class="logo" />
-      <nav class="top-actions">
-        <button id="btn-play" class="btn primary">Play Demo</button>
-        <button id="btn-gallery" class="btn ghost">Galería</button>
+      <nav>
+        <button class="btn primary">Play Demo</button>
+        <button class="btn ghost">Galería</button>
       </nav>
     </header>
 
-    <aside class="panel glass" id="control-panel">
+    <aside class="panel glass">
       <h3>Opciones</h3>
-      <label><input type="checkbox" id="toggle-shadows" checked /> Sombras</label>
-      <label><input type="checkbox" id="toggle-effects" checked /> Efectos 3D</label>
-      <label><input type="checkbox" id="toggle-sound" /> Sonido</label>
-      <div class="quality">
-        <label for="select-quality">Calidad:</label>
-        <select id="select-quality">
-          <option value="high">Alta</option>
-          <option value="medium">Media</option>
-          <option value="low">Baja</option>
-        </select>
-      </div>
+      <label><input type="checkbox" checked> Sombras</label>
+      <label><input type="checkbox" checked> Efectos 3D</label>
+      <label><input type="checkbox"> Sonido</label>
+      <label for="calidad">Calidad:</label>
+      <select id="calidad">
+        <option>Alta</option>
+        <option>Media</option>
+        <option>Baja</option>
+      </select>
     </aside>
 
     <main class="content">
       <section class="hero glass">
         <h1>Blood Strike — Anime Edition</h1>
-        <p>Landing futurista con ambiente 3D interactivo y visual estilo anime cyberpunk.</p>
+        <p>Landing futurista con ambiente 3D interactivo y estética anime cyberpunk.</p>
         <div class="hero-actions">
-          <button id="cta-play" class="btn primary">Probar Demo</button>
-          <button id="cta-more" class="btn ghost">Más información</button>
+          <button class="btn primary">Probar Demo</button>
+          <button class="btn ghost">Más información</button>
         </div>
       </section>
 
       <section id="features" class="glass cards">
-        <article><h4>Gráficos 3D</h4><p>Motor Three.js optimizado con efectos visuales suaves y realistas.</p></article>
-        <article><h4>Estilo Anime</h4><p>Inspirado en ciudades futuristas con estética neón.</p></article>
-        <article><h4>Responsive</h4><p>Perfecto en móviles, tablets y escritorio.</p></article>
+        <article><h4>Gráficos 3D</h4><p>Motor Three.js optimizado con efectos suaves y realistas.</p></article>
+        <article><h4>Estilo Anime</h4><p>Inspirado en Tokio futurista con luces de neón.</p></article>
+        <article><h4>Responsive</h4><p>Perfecto para móviles, tablets y PC.</p></article>
       </section>
     </main>
 
