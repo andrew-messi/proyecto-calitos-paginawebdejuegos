@@ -1,0 +1,16 @@
+# Node (if used locally)
+node_modules/
+dist/
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Build artifacts / logs
+*.log
+*.local
+*.bak
