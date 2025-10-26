@@ -3,52 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>GTA Anime — Landing Demo</title>
-  <meta name="description" content="Landing interactiva estilo anime + GTA futurista. Demo 3D con Three.js." />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="manifest" href="manifest.json" />
-  <!-- Scripts son modules: se cargan deferidos -->
-  <script type="module" defer src="js/ui.js"></script>
-  <script type="module" defer src="js/app.js"></script>
+  <title>GTA Anime Landing — Demo Futurista</title>
+  <meta name="description" content="Landing interactiva 3D con estética anime futurista, creada con Three.js" />
+
+  <!-- Favicon y estilos -->
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Scripts principales -->
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/ui.js"></script>
 </head>
+
 <body>
   <div id="app">
-    <!-- Canvas 3D -->
-    <div id="canvas-wrap" role="region" aria-label="Escena 3D principal">
+    <div id="canvas-wrap">
       <canvas id="three-canvas" aria-label="Escena 3D principal"></canvas>
-      <noscript class="no-js">Activa JavaScript para ver el demo 3D.</noscript>
     </div>
 
-    <!-- UI overlay -->
-    <header class="topbar" role="banner">
-      <img src="assets/images/logo.png" alt="Logo" class="logo" />
-      <nav class="top-actions" role="navigation" aria-label="Acciones principales">
-        <button id="btn-play" class="btn" aria-pressed="false">Play Demo</button>
+    <header class="topbar glass">
+      <img src="./assets/images/logo.png" alt="Logo del juego" class="logo" />
+      <nav class="top-actions">
+        <button id="btn-play" class="btn primary">Play Demo</button>
         <button id="btn-gallery" class="btn ghost">Galería</button>
       </nav>
     </header>
 
-    <aside class="panel glass" id="control-panel" aria-label="Panel de opciones">
+    <aside class="panel glass" id="control-panel">
       <h3>Opciones</h3>
-      <label class="switch" for="toggle-shadows">
-        <input type="checkbox" id="toggle-shadows" checked aria-checked="true"/>
-        <span>Sombras</span>
-      </label>
-
-      <label class="switch" for="toggle-effects">
-        <input type="checkbox" id="toggle-effects" checked aria-checked="true"/>
-        <span>Efectos 3D</span>
-      </label>
-
-      <label class="switch" for="toggle-sound">
-        <input type="checkbox" id="toggle-sound" aria-checked="false"/>
-        <span>Sonido</span>
-      </label>
-
+      <label><input type="checkbox" id="toggle-shadows" checked /> Sombras</label>
+      <label><input type="checkbox" id="toggle-effects" checked /> Efectos 3D</label>
+      <label><input type="checkbox" id="toggle-sound" /> Sonido</label>
       <div class="quality">
-        <label for="select-quality">Calidad</label>
-        <select id="select-quality" aria-label="Seleccionar calidad de render">
+        <label for="select-quality">Calidad:</label>
+        <select id="select-quality">
           <option value="high">Alta</option>
           <option value="medium">Media</option>
           <option value="low">Baja</option>
@@ -56,34 +44,25 @@
       </div>
     </aside>
 
-    <main class="content" role="main">
-      <section class="hero glass" aria-labelledby="hero-title">
-        <h1 id="hero-title">Blood Strike — Anime Edition (Demo)</h1>
-        <p>Landing interactiva: fondos dinámicos, personajes 3D y UI con transparencias.</p>
+    <main class="content">
+      <section class="hero glass">
+        <h1>Blood Strike — Anime Edition</h1>
+        <p>Landing futurista con ambiente 3D interactivo y visual estilo anime cyberpunk.</p>
         <div class="hero-actions">
           <button id="cta-play" class="btn primary">Probar Demo</button>
           <button id="cta-more" class="btn ghost">Más información</button>
         </div>
       </section>
 
-      <section id="features" class="glass cards" aria-label="Características">
-        <article>
-          <h4>Animaciones 3D</h4>
-          <p>Escena real en Three.js con controles y luces dinámicas.</p>
-        </article>
-        <article>
-          <h4>Estética Anime</h4>
-          <p>Paleta y assets pensados para una vibra anime futurista.</p>
-        </article>
-        <article>
-          <h4>Responsive</h4>
-          <p>Optimizado para móviles y escritorio.</p>
-        </article>
+      <section id="features" class="glass cards">
+        <article><h4>Gráficos 3D</h4><p>Motor Three.js optimizado con efectos visuales suaves y realistas.</p></article>
+        <article><h4>Estilo Anime</h4><p>Inspirado en ciudades futuristas con estética neón.</p></article>
+        <article><h4>Responsive</h4><p>Perfecto en móviles, tablets y escritorio.</p></article>
       </section>
     </main>
 
-    <footer class="footer glass" role="contentinfo">
-      <small>Made by Carlitos — Demo</small>
+    <footer class="footer glass">
+      <small>© 2025 Carlitos — Proyecto GTA Anime Landing</small>
     </footer>
   </div>
 </body>
