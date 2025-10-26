@@ -1,0 +1,7 @@
+starter-assets/
+├─ hero_bg.jpg            (alta resolución, por ejemplo 1920x1080 optimizado)
+├─ hero_bg-low.jpg        (versión 640–960px, para lazy load inicial)
+├─ logo.png               (512x512)
+├─ placeholder-thumb.jpg  (150x150)
+├─ model_scene.glb        (glTF binario optimizado)
+└─ theme_loop.mp3         (loop breve, optimizado)
